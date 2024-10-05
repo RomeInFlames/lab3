@@ -25,4 +25,5 @@ if __name__ == '__main__':
     while S >= 1:
         S -= 1
         banknotes += 1
+
     print(f"Total banknotes = {banknotes}")
