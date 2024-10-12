@@ -13,7 +13,7 @@ if __name__ == '__main__':
     Coordinate2 = (x2, y2)
     d = math.dist(Coordinate1, Coordinate2)
 
-    if d <= r1 + r2:
+    if d < r1 + r2:
         point = 2
     elif d == r1 + r2:
         point = 1
