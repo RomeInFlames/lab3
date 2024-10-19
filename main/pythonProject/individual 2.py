@@ -9,9 +9,9 @@ if __name__ == '__main__':
     r1 = int(input("Radius of first circle? "))
     r2 = int(input("Radius of second circle? "))
 
-    Coordinate1 = (x1, y1)
-    Coordinate2 = (x2, y2)
-    d = math.dist(Coordinate1, Coordinate2)
+    coordinate1 = (x1, y1)
+    coordinate2 = (x2, y2)
+    d = math.dist(coordinate1, coordinate2)
 
     if d < r1 + r2:
         point = 2
