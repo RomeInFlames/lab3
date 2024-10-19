@@ -4,26 +4,26 @@
 import sys
 
 if __name__ == '__main__':
-    S = float(input("Payment amount? "))
-    if S < 0:
+    s = float(input("Payment amount? "))
+    if s < 0:
         print("Illegal value of payment amount", file=sys.stderr)
         exit(1)
 
     banknotes = 0
-    while S >= 500:
-        S -= 500
+    while s >= 500:
+        s -= 500
         banknotes += 1
-    while S >= 100:
-        S -= 100
+    while s >= 100:
+        s -= 100
         banknotes += 1
-    while S >= 10:
-        S -= 10
+    while s >= 10:
+        s -= 10
         banknotes += 1
-    while S >= 5:
-        S -= 5
+    while s >= 5:
+        s -= 5
         banknotes += 1
-    while S >= 1:
-        S -= 1
+    while s >= 1:
+        s -= 1
         banknotes += 1
 
     print(f"Total banknotes = {banknotes}")
